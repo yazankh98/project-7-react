@@ -1,0 +1,65 @@
+
+.homeSection2{
+    margin: 13.5vh 4.2vw;
+    display: flex;
+    justify-content: space-between;
+}
+.homeSection2Des{
+    margin: 30px 0 ;
+    width: 40vw;
+    line-height: 1.5rem;
+}
+.homeSection2Line{
+    width: 40vw;
+    height: 1px;
+    background-color: rgba(147, 125, 194, 0.6) ;
+    margin: 20px 0;
+}
+.homeSection2Left ::placeholder {
+    color: rgba(147, 125, 194, 0.6) ;
+}
+.homeSection2Subscribe {
+    width: 40vw;
+    height: 2.2rem;
+    border: none;
+    background-color: rgba(147, 125, 194, 1);
+    border-radius: 3px;
+    color: white;
+}
+.homeSection2Right iframe{
+    width: 100%;
+}
+.homeSection2Left{
+    width: 50%;
+}
+.homeSection2Right{
+    width: 50%;
+}
+@media screen and (max-width:992px) { 
+    .homeSection2{
+        flex-direction: column;
+        margin: 5.5vh 4.2vw;
+    }
+    .homeSection2Left {
+        width: 100%;
+    }
+    .homeSection2title {
+        text-align: center;
+    }
+    .homeSection2Des {
+        width: 100%;
+    }
+    .homeSection2 form {
+        width: max-content;
+        margin: 0 auto;
+    }
+    .homeSection2Right {
+        width: 100%;
+    }
+    .homeSection2Subscribe{
+        margin: 30px auto;
+        display: block;
+
+    }
+}
+

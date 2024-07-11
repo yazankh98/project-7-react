@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.dark {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+
+.theme {
+    transition: 0.3s all ease-in;
+}

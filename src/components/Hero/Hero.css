@@ -1,0 +1,58 @@
+.hero{
+    margin: 13.5vh 4.2vw;
+    display: flex;
+    justify-content: space-between;
+}
+.heroAuthor {
+    border: 1px solid #C689C6;
+    width: max-content;
+    
+}
+.heroAuthor p{
+    margin: 10px;
+    color: #C689C6 ;
+    border-radius: 5px;
+}
+.heroLeft h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 6.1vh 0;
+    }
+    .heroTitle {
+        width: 40vw;
+        line-height: 1.875rem;
+
+    }
+    .heroViewBook {
+        margin-top: 4.3vh ;
+        padding: 0.8rem 1.5rem;
+        background-color: #937DC2;
+        color: white;
+        border-radius: 5px;
+    }
+    @media screen and (max-width:992px) {
+        .hero{
+            flex-direction: column;
+        }
+        .heroLeft h1{
+            width: 90vw;
+        text-align: center;
+        }
+        .heroLeft {
+            margin: 0 auto;
+        }
+        .heroTitle {
+            margin: 0 auto;
+            width: 90vw;
+        }
+        .heroAuthor {
+            margin: 0 auto;
+        }
+        .heroViewBook{
+            margin: 4.3vh auto;
+            display: block;
+        }
+        .heroRight{
+            margin: 0 auto ;
+        }
+    }

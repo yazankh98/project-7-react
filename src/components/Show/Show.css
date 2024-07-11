@@ -1,0 +1,84 @@
+.showContainer {
+    margin: 15vh 4.3vw 5vw 4.3vw;
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.showLeft {
+    width: 50%;
+}
+
+.showLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.showDescription {
+    width: 40vw;
+    line-height: 1.5rem;
+}
+
+.showRight img {
+    display: block;
+    margin: 20px 0;
+}
+
+.showRight .showAddToCart,
+.showRight .showFav {
+    padding: 12px 70px 12px 70px;
+    border-radius: 5px;
+    background-color: rgba(147, 125, 194, 1);
+    color: white;
+    margin: 20px;
+}
+
+.showRight .showFav {
+    background-color: rgba(147, 125, 194, 0);
+    color: rgba(147, 125, 194, 1);
+    border: 1px solid rgba(147, 125, 194, 1);
+}
+
+.showRight .line {
+    width: 100%;
+    background-color: rgba(147, 125, 194, 1);
+    height: 1px;
+    margin: 20px;
+}
+
+.showInfo p{
+color: rgba(147, 125, 194, 1) ;
+display: inline;
+line-height: 3rem;
+margin-right: 20px;
+}
+
+.showInfo span {
+    display: block;
+}
+
+@media screen and (max-width:992px) {
+.showContainer {
+    flex-direction: column;
+    margin: 50px 0;
+}
+.showLeft {
+    margin: 0 auto;
+    width: 90%;
+}
+.showRight {
+    text-align: center;
+}
+.showDescription {
+    margin: 0 auto;
+    width: 90vw;
+
+}
+.showRight img{
+    margin: 30px auto;
+}
+.showRight .line {
+    width: 90%;
+}
+}
