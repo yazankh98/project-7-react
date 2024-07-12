@@ -2,6 +2,7 @@ import React from 'react'
 import './NavBar.css'
 import { useState, useContext } from 'react'
 import { ThemeContext } from './../../App'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     const [showMenu, setshowMenu] = useState(true)
@@ -25,7 +26,7 @@ const NavBar = () => {
                 <div className="pages">
                     <ul className={`${theme === 'dark' ? "darkword" : ""}`} >
 
-                        <a href=""><li>Home</li></a>
+                        <Link  to="/" >Home</Link>
                         <a href=""><li>News</li></a>
                         <a href=""><li >Promotion of the mount </li></a>
                         <a href=""><li >Plublishs</li></a>

@@ -34,10 +34,9 @@ const Section1 = () => {
                                 <p ><img src="/images/star.png" alt="" /> {element.rating} </p>
                             </div>
                             <div className="Section1Show">
-                            
-                                {/* <button><Link to={"/show"} state={{ from: element.id }} */}
-                                <button><Link to="/show" state={element.id}
-                                > Show Details  </Link></button>
+
+                                <Link to="/show" state={element.id}
+                                > <button>Show Details </button>  </Link>
                             </div>
 
                         </div>

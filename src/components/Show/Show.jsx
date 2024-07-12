@@ -5,7 +5,6 @@ import axios from 'axios'
 import { useLocation } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
-import { ThemeContext } from './../../App'
 const Show = () => {
     const [book, setbook] = useState([])
     const location = useLocation();
@@ -14,11 +13,6 @@ const Show = () => {
         axios.get(`https://example-data.draftbit.com/books/${data}`)
             .then((json) => { setbook(json.data) })
     }, [])
-
-
-    const theme = localStorage.getItem('theme')
-    const [themee, setthemee] = useState()
-
 
     return (
         <div>
